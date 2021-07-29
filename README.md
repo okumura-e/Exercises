@@ -1,2 +1,2 @@
 # Exercises
-Some exercises in C++
+Here are some exercises in C++ that I made
