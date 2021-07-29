@@ -3,41 +3,29 @@
 using namespace std;
 int main(){
     cout <<"How many numbers?\n";
-    int N, a = 0, b = 0; cin >> N;
+    int N, a = 0, b = 1, count = 0; cin >> N;
     int array[N];
-    while (a <= N)
+    while (count < N)
     {
         cin>>a;
-        array[a] = a;
+        array[count] = a;
+        count++;
     }
-    for(int i = 1, c = 0; i <= N; i++, c++)
+    count = 0;
+    for(int i = 0; i < N; i++)
     {
-        if(array[c] % i == 0)
+        for(int p = 1; p <= array[i]; p++)
         {
-            b++;
+            if(array[i] % p == 0)
+            {
+                count++;
+            }
         }
+    if(count == 2){
+        cout << array[i] << "- YES" << endl;
+    }else{
+        cout << array[i] << "- NO" << endl;
     }
-    /*cout <<"How many numbers?\n";
-    int N, i; cin >> N;
-    int array[N];
-    for(i = 0; i < N; i++){
-        cin >> array[i];
-    };
-    for(i = 0; i < N; i++){
-        if(array[i] != 2 & array[i] %2 == 0){
-            cout << vetor[i]<<" : NÃO\n";
-        }
-        else if(vetor[i] == 1 or vetor[i] != 3 & vetor[i]%3 == 0 or vetor[i] != 5 & vetor[i]%5 == 0 or vetor[i] !=7 & vetor[i]%7 == 0 or vetor[i] !=11 & vetor[i] %11 == 0){ 
-            cout << vetor[i]<< " : NÃO\n";
-        }
-        else{
-            cout <<vetor[i]<< " : SIM\n";
-        };
-    };
-    
-    return 0;*/
-}
-
-
-
+    count = 0;
+    }
 }
