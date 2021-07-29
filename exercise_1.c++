@@ -2,15 +2,15 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int i, n, p = 0; cin >>n;
+    int i, n, p = 0; cin >> n;
     for(i = 1; i <= n; i++){
         if(n % i ==0){
             p += 1;
         }
     };
-    if(p ==2){
-        cout <<"Yes\n";
+    if(p ==2 ){
+        cout << "Yes" << endl;
     }else{
-        cout <<"No\n";
+        cout << "No" << endl;
     };
 }

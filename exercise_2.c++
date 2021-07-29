@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
     cout <<"How many numbers?\n";
-    int N, a = 0, b = 1, count = 0; cin >> N;
+    int N, a = 0, count = 0; cin >> N;
     int array[N];
     while (count < N)
     {
