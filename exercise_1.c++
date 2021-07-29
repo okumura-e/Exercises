@@ -9,8 +9,8 @@ int main(){
         }
     };
     if(p ==2){
-        cout <<"SIM\n";
+        cout <<"Yes\n";
     }else{
-        cout <<"NAO\n";
+        cout <<"No\n";
     };
 }
