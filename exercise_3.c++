@@ -4,26 +4,29 @@ using namespace std;
 int main()
 {
     cout << "how many numbers primes do you want to sum?" << endl;
-    int sum, count = 0, X; cin >> X;
+    int sum, b = 1, count = 0, X; cin >> X;
     int array[X];
-    for(int i = 0; i <= X; i++)
+
+    for(int i = 0; i < X; i++)
     {
-        int b = 1;
-        for(int y = b; y <= b; y++)
+        for(int y = 1; y < b; y++)
         {
-            if(b % y == 0)
+            while(y < b)
             {
-                count++;
-                if(count == 2)
+                if(b % y == 0)
                 {
-                    array[i] = b;
+                    count ++;
                 }
             }
-        b++;
-        count = 0;
+            if(count == 2)
+            {
+                array[i] = b;
+            }
         }
+        count = 0;
+        b++;
     }
-    for(int i = 0; i <= X; i++)
+    for(int i = 0; i < X; i++)
     {
         cout << array[i] << endl;
     }
